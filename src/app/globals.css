@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #F9FAFB;
+  --color-card: #FFFFFF;
+  --color-primary: #3B82F6;
+  --color-secondary: #1F2937;
+  --color-accent: #10B981;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-secondary antialiased;
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
+
+.kpi-card {
+  @apply bg-white p-6 rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-shadow duration-300;
+}
+
+.table-container {
+  @apply bg-white rounded-2xl border border-gray-100 shadow-sm overflow-hidden;
+}
+
+.table-header {
+  @apply bg-gray-50/50 border-b border-gray-100;
+}
+
+.table-row {
+  @apply border-b border-gray-50 last:border-0 hover:bg-gray-50/50 transition-colors;
+}
+
+.table-cell {
+  @apply px-6 py-4 text-sm;
+}
